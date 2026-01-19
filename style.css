@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.inter-font {
+  font-family: 'Inter', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1600px;
+  height: 92px;
+  background-color: #1a0b2e;
+  border-bottom: 1px solid rgba(65, 37, 103, 1);
+}
+.logo {
+  margin-left: 200px;
+}
+.logo h2 {
+  color: #ffffff;
+  font-size: 40px;
+}
+.logo span {
+  background-image: linear-gradient(
+    100deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+
+  -webkit-background-clip: text; /* Clip the background inside the text only.Without clip , the gradient would fill the whole box, not just the letters. */
+  -webkit-text-fill-color: transparent; /* This makes the actual text color invisible so that we only see the gradient. */
+}
+.menu {
+  display: flex;
+  gap: 32px;
+}
+.menu li,
+.color-btn li {
+  list-style: none;
+}
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn {
+  margin-right: 200px;
+  /* width: 135px;
+  height: 44px; */
+  padding: 16px 12px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    100deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  color: #ffffff;
+  font-weight: 600;
+}
+#banner {
+  width: 1600px;
+  height: 760px;
+  background-image: url(./image/hero-bg.png);
+  display: flex;
+  justify-content: center;
+}
+
+.banner-contain {
+  width: 550px;
+  height: 558px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 101px;
+  align-items: center;
+}
+.banner-img {
+  position: relative;
+}
+.bg-img {
+  display: block;
+  width: 350px;
+  height: 350px;
+}
+.top-img {
+  position: absolute;
+  margin-top: -270px;
+  margin-left: 120px;
+  width: 116px;
+  height: 175px;
+}
+.banner-img h3 {
+  position: absolute;
+  color: #1a0b2e;
+  background-color: #00ff88;
+  width: 75px;
+  height: 38px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10000px;
+  margin: 12px 123px 508px 250px;
+  box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+}
+.banner-text {
+  text-align: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  margin-top: 40px;
+  width: 550px;
+}
+.banner-text h3 {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+.banner-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 8px;
+}
+.btn-3 button {
+  width: 147px;
+  height: 44px;
+  border-radius: 30px;
+  border: 2px solid #00ff88;
+  color: #00ff88;
+  background: transparent;
+}
+.btn-2 button {
+  /* padding: 16px 8px; */
+  width: 201px;
+  height: 44px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    100deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.banner-text p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 8px;
+}
+#about {
+  width: 1600px;
+  /* max-width: 1600px; */
+  background-color: #1a0b2e;
+  height: 646px;
+}
+.about-text {
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  text-align: center;
+  border-bottom: 1px solid rgb(45, 25, 71);
+}
+.about-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.about-text p {
+  color: #ffffff;
+  margin-top: 16px;
+}
+.about-card-container {
+  display: flex;
+  gap: 80px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+.about-card h1 {
+  color: #00ff88;
+  font-size: 48px;
+  font-weight: 900;
+}
+.about-card p {
+  font-weight: 200;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+#techWave {
+  width: 1600px;
+  height: 1121px;
+  background-color: #230e3d;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#techWave h2 {
+  text-align: center;
+  padding-top: 120px;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+}
+.techWave-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 100px);
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 30px;
+  /* border: 2px solid red; */
+  width: 75%;
+  max-width: 1200px;
+  height: 753px;
+  margin: auto;
+  margin-top: 40px;
+}
+.medium-layout,
+.large-layout,
+.extra-large-layout,
+.small-layout {
+  background-color: #35116540;
+  border-radius: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+.medium-layout h4,
+.large-layout h4,
+.extra-large-layout h4,
+.small-layout h4 {
+  color: #ffffff;
+  margin-top: 16px;
+}
+.medium-layout p,
+.large-layout p,
+.extra-large-layout p,
+.small-layout p {
+  color: #ffffff;
+  margin-top: 16px;
+}
+
+.medium-layout {
+  grid-column: span 2;
+  grid-row: span 4;
+  padding: 107px 0 0 40px;
+  /* border: 2px solid red; */
+}
+.large-layout {
+  grid-column: span 4;
+  grid-row: span 2;
+  padding: 40px;
+  /* border: 2px solid red; */
+}
+.extra-large-layout {
+  grid-column: span 4;
+  grid-row: span 2;
+  padding: 40px;
+  /* border: 2px solid red; */
+}
+.small-layout {
+  grid-column: span 2;
+  grid-row: span 2;
+  padding: 40px;
+  /* border: 2px solid red; */
+}
+#Featured {
+  width: 1600px;
+  height: 1276px;
+  background-color: #1a0b2e;
+}
+.Featured-content {
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.Featured-content h2 {
+  text-align: center;
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.video-frame-card {
+  display: flex;
+  margin-top: 98px;
+  justify-content: center;
+  gap: 30px;
+}
+.video-card {
+  width: 380px;
+  height: 440px;
+  background-color: #250d44;
+  border-radius: 30px;
+  /* padding: 24px; */
+}
+.video-card h5 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: 24px;
+  font-weight: bold;
+}
+.video-card h5,
+p {
+  padding: 0 24px;
+}
+.video-card p {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 12px;
+  color: #ffffff;
+  font-weight: 100;
+}
+.video-card iframe {
+  border-radius: 20px;
+}
+.min i,
+.min p {
+  color: #00ff88;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .menu,
+  .btn {
+    display: none;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .logo h2 {
+    font-size: 30px;
+  }
+  #banner {
+    width: 100%;
+    height: 466px;
+    background-image: url(./image/hero-bg.png);
+    background-color: #1a0b2e;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .banner-contain {
+    width: 400px;
+    height: 386px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .bg-img {
+    display: block;
+    max-width: 200px;
+    height: 200px;
+  }
+  .top-img {
+    position: absolute;
+    margin-top: -135px;
+    margin-left: 77px;
+    width: 46px;
+    height: 70px;
+  }
+  .banner-img h3 {
+    position: absolute;
+    margin: 10px 100px 0 125px;
+  }
+}
